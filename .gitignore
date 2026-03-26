@@ -1,87 +1,37 @@
-# Persona 1 - Catalog
-
-# Ignore everything by default
-*
-**/*
-
-# Common generated files and secrets
-node_modules/
+HELP.md
 target/
-build/
-out/
-.idea/
-.vscode/
-.settings/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
 .classpath
+.factorypath
 .project
-.env
-.env.*
-__pycache__/
-*.pyc
-.DS_Store
-Thumbs.db
-*.log
-*.tmp
-*.swp
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Veltro ###
+*.class
 **/application-local.yml
-
-# Shared root files
-!.gitattributes
-!.gitignore
-!.gitignore.persona1
-!pom.xml
-!mvnw
-!mvnw.cmd
-!.mvn/
-!.mvn/wrapper/
-!.mvn/wrapper/maven-wrapper.properties
-!.mvn/wrapper/maven-wrapper.jar
-
-# Shared source/resource parents
-!src/
-!src/main/
-!src/main/java/
-!src/main/java/com/
-!src/main/java/com/veltro/
-!src/main/java/com/veltro/inventory/
-!src/main/resources/
-!src/test/
-!src/test/java/
-!src/test/java/com/
-!src/test/java/com/veltro/
-!src/test/java/com/veltro/inventory/
-
-# Shared application config
-!src/main/resources/application.yaml
-
-# Catalog application
-!src/main/java/com/veltro/inventory/application/
-!src/main/java/com/veltro/inventory/application/catalog/
-!src/main/java/com/veltro/inventory/application/catalog/**
-
-# Catalog domain
-!src/main/java/com/veltro/inventory/domain/
-!src/main/java/com/veltro/inventory/domain/catalog/
-!src/main/java/com/veltro/inventory/domain/catalog/**
-
-# Catalog persistence
-!src/main/java/com/veltro/inventory/infrastructure/
-!src/main/java/com/veltro/inventory/infrastructure/adapters/
-!src/main/java/com/veltro/inventory/infrastructure/adapters/persistence/
-!src/main/java/com/veltro/inventory/infrastructure/adapters/persistence/ProductJpaRepository.java
-!src/main/java/com/veltro/inventory/infrastructure/adapters/persistence/CategoryJpaRepository.java
-
-# Catalog web controllers
-!src/main/java/com/veltro/inventory/infrastructure/adapters/web/
-!src/main/java/com/veltro/inventory/infrastructure/adapters/web/ProductController.java
-!src/main/java/com/veltro/inventory/infrastructure/adapters/web/CategoryController.java
-
-# Catalog tests
-!src/test/java/com/veltro/inventory/application/
-!src/test/java/com/veltro/inventory/application/catalog/
-!src/test/java/com/veltro/inventory/application/catalog/**
-!src/test/java/com/veltro/inventory/infrastructure/
-!src/test/java/com/veltro/inventory/infrastructure/adapters/
-!src/test/java/com/veltro/inventory/infrastructure/adapters/web/
-!src/test/java/com/veltro/inventory/infrastructure/adapters/web/ProductControllerTest.java
-!src/test/java/com/veltro/inventory/infrastructure/adapters/web/CategoryControllerTest.java
