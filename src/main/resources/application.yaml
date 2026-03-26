@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: veltro
+  profiles:
+    active: local
+
+# JWT configuration (B1-02).
+# Override jwt.secret per environment profile; never commit a real secret here.
+jwt:
+  secret: ${JWT_SECRET:veltro-local-dev-secret-change-in-production-min-256bits!!}
+  access-token-expiration: 900        # 15 minutes in seconds
+  refresh-token-expiration: 604800    # 7 days in seconds
